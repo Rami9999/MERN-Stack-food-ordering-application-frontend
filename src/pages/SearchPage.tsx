@@ -38,13 +38,15 @@ const SearchPage = () => {
         }));
     }
 
+    if(isLoading){
+        return <span>Loading...</span>
+    }
+    
     if(!results?.data || !city)
     {
         return <span>No Results found</span>
     }
-    if(isLoading){
-        <span>Loading...</span>
-    }
+
 
     const setSelectedCuisines = (selectedCuisines:string[]) =>{
         setSearchState((prevState)=>({

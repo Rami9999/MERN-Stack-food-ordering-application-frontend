@@ -10,7 +10,7 @@ const Nav = () => {
         {isAuthenticated ? 
         <>
         <Link to="order-status" className='font-bold hover:text-orange-500'>
-          Orderes Status
+          Orders Status
         </Link>
         <UsernameMenu />
         </>:    

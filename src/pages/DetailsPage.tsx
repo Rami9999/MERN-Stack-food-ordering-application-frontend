@@ -108,7 +108,7 @@ const DetailsPage = () => {
                     <MenuItemComponent menuItem={menuItem} addToCart={()=>addToCart(menuItem)}  />
                 ))}
             </div>
-            <div className="">
+            <div >
                 <Card>
                     <OrderSummary restaurant={restaurant} cartItems={cartItems} removeFromCart={removeFromCart} />
                     <CardFooter>

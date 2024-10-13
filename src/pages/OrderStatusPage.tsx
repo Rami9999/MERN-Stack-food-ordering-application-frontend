@@ -2,7 +2,6 @@ import { useGetMyOrders } from '@/api/OrderApi'
 import OrderStatusDetail from '@/components/OrderStatusDetail';
 import OrderStatusHeader from '@/components/OrderStatusHeader';
 import { AspectRatio } from '@radix-ui/react-aspect-ratio';
-import React from 'react'
 
 const OrderStatusPage = () => {
     const {orders,isLoading} = useGetMyOrders();
